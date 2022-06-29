@@ -360,7 +360,27 @@
 
 
 <h1 id="software-verification">Software Verification</h1>
-<p>TODO</p>
+<p>All <a href="https://github.com/joinmarket-webui/joinmarket-webui/releases">releases</a> are signed by one of the Jam <a href="https://github.com/joinmarket-webui/joinmarket-webui/graphs/contributors">contributors</a>. As of this writing (<a href="https://www.blockstream.info/block-height/742834">742,834</a>), releases are signed with <a href="https://dergigi.com/pgp/">dergigi's PGP key</a> which has the following fingerprint:</p>
+<pre><code>8198 A185 30A5 22A0 9561 2439 89C4 A25E 69A5 DE7F
+</code></pre>
+<p>To verify a specific release, import the key</p>
+<pre><code>curl https://dergigi.com/PGP.txt | gpg --import
+</code></pre>
+<p>and <a href="https://git-scm.com/docs/git-verify-tag">verify the git tag</a> of your local copy:</p>
+<pre><code>git verify-tag v0.0.8
+</code></pre>
+<p>This should produce an output that contains "good signature" as well as the key fingerprint mentioned above:</p>
+<pre><code>gpg: Signature made Di 28 Jun 11:39:34 2022 CEST
+gpg:                using RSA key 8198A18530A522A09561243989C4A25E69A5DE7F
+gpg: Good signature from &quot;Gigi &lt;dergigi@pm.me&gt;&quot; [unknown]
+...
+Primary key fingerprint: 8198 A185 30A5 22A0 9561  2439 89C4 A25E 69A5 DE7F
+</code></pre>
+<hr />
+<p>You can also see that a release was signed properly by clicking on the
+verification tag <img alt="Verification badge" src="../assets/github-checkmark.png" /> on the
+<a href="https://github.com/joinmarket-webui/joinmarket-webui/releases">releases page</a> on GitHub.</p>
+<p><img alt="Verified release on GitHub" src="../assets/github-verified.png" /></p>
 
               
             </article>
