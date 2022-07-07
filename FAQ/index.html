@@ -260,8 +260,36 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#question-1" class="md-nav__link">
-    Question 1
+  <a href="#how-much-can-i-earn" class="md-nav__link">
+    How much can I earn?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-high-are-the-fees-that-i-do-have-to-pay" class="md-nav__link">
+    How high are the fees that I do have to pay?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#im-getting-an-error-when-trying-to-open-the-wallet" class="md-nav__link">
+    I'm getting an error when trying to open the wallet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#something-isseems-stuck-what-can-i-do" class="md-nav__link">
+    Something is/seems stuck; what can I do?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no-connection-to-gateway" class="md-nav__link">
+    No connection to gateway
   </a>
   
 </li>
@@ -387,7 +415,7 @@
   
     <li class="md-nav__item">
       <a href="../interface/02-jam/" class="md-nav__link">
-        "Jam" - Schedule Transactions
+        Jam
       </a>
     </li>
   
@@ -725,8 +753,36 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#question-1" class="md-nav__link">
-    Question 1
+  <a href="#how-much-can-i-earn" class="md-nav__link">
+    How much can I earn?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-high-are-the-fees-that-i-do-have-to-pay" class="md-nav__link">
+    How high are the fees that I do have to pay?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#im-getting-an-error-when-trying-to-open-the-wallet" class="md-nav__link">
+    I'm getting an error when trying to open the wallet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#something-isseems-stuck-what-can-i-do" class="md-nav__link">
+    Something is/seems stuck; what can I do?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no-connection-to-gateway" class="md-nav__link">
+    No connection to gateway
   </a>
   
 </li>
@@ -751,9 +807,48 @@
 
 
 <h1 id="faq">FAQ</h1>
+<p>Have a question that is not listed here? Let us know!</p>
+<p><a href="../contribute/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M13.22 19.03a.75.75 0 0 0 1.06 0l6.25-6.25a.75.75 0 0 0 0-1.06l-6.25-6.25a.75.75 0 1 0-1.06 1.06l4.97 4.97H3.75a.75.75 0 0 0 0 1.5h14.44l-4.97 4.97a.75.75 0 0 0 0 1.06z"/></svg></span> Contributing</a></p>
 <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
-<h3 id="question-1">Question 1</h3>
 <p>TODO</p>
+<h3 id="how-much-can-i-earn">How much can I earn?</h3>
+<p>TODO</p>
+<h3 id="how-high-are-the-fees-that-i-do-have-to-pay">How high are the fees that I do have to pay?</h3>
+<p>The amount of <a href="../market/fees/">fees</a> you have to pay depends on market and blockspace
+conditions. They are dictated by supply and demand, both for collaborative
+transactions and onchain tranactions in general.</p>
+<p>Market <a href="/glossary">makers</a> provide liquidity and set the fee they want to earn,
+either in absolute or percentage terms. Market <a href="/glossary">takers</a> have to agree
+to take these offers voluntarily. Check the <a href="market/orderbook">orderbook</a> to get an
+up-to-date overview of the current fee market.</p>
+<p>In addition to these fees, you will have to pay mining fees. Mining fees depend
+on how many transactions are currently in the <a href="/glossary">mempool</a>. Inspect your
+mempool or use a public site like <a href="https://mempool.space/">mempool.space</a> to do a fee estimation.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>We highly recommended that you <a href="https://github.com/mempool/mempool#one-click-installation">run your own mempool.space
+instance</a> on your full node.</p>
+</div>
+<p>See also "<a href="https://github.com/JoinMarket-Org/joinmarket-clientserver/blob/master/docs/tumblerguide.md#a-note-on-fees">a note on fees</a>" from the JoinMarket documentation.</p>
+<h3 id="im-getting-an-error-when-trying-to-open-the-wallet">I'm getting an error when trying to open the wallet</h3>
+<p>The following error can pop up in case JoinMarket didnt't shut down cleanly:</p>
+<pre><code>wallet.jmdat cannot be created/opened, it is locked.
+</code></pre>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Make sure that you have <strong>written down your wallet seed</strong> before executing
+<em>any</em> command</p>
+</div>
+<p>You can resolve this by manually deleting the wallet <code>.lock</code> file as explained
+in <a href="https://github.com/joinmarket-webui/joinmarket-webui/issues/173#issuecomment-1069086553">issue #173</a>.</p>
+<h3 id="something-isseems-stuck-what-can-i-do">Something is/seems stuck; what can I do?</h3>
+<p>(hint: service feedback not yet provided; it's always safe to cancel operations;
+no loss of funds)</p>
+<h3 id="no-connection-to-gateway">No connection to gateway</h3>
+<p>(hint: check service is running; check ports are open) can also be reverse proxy
+issues; reverse proxy is still mandatory (this is a pain point for me.. we need
+to get rid of it) don't know if we should go into details why it is needed or
+what the differences are</p>
 
               
             </article>
