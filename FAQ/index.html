@@ -852,19 +852,31 @@
 <p>Have a question that is not listed here? <a href="../contribute/">Let us know!</a></p>
 <p><a href="../contribute/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M13.22 19.03a.75.75 0 0 0 1.06 0l6.25-6.25a.75.75 0 0 0 0-1.06l-6.25-6.25a.75.75 0 1 0-1.06 1.06l4.97 4.97H3.75a.75.75 0 0 0 0 1.5h14.44l-4.97 4.97a.75.75 0 0 0 0 1.06z"/></svg></span> Contributing</a></p>
 <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
-<p>TODO</p>
+<p>This FAQ compiles questions that relate to Jam in particular. For things related to JoinMarket in general, please refer to the <a href="https://github.com/JoinMarket-Org/joinmarket-clientserver/tree/master/docs">JoinMarket documentation</a>.</p>
 <h3 id="how-much-can-i-earn">How much can I earn?</h3>
-<p>TODO</p>
+<p>Earning sats entails providing liquidity to other market participants.
+Consequently, how much you can earn depends on multiple factors, market
+conditions and liquidity size being two of them. In general, the more liquidity
+you provide, the more you can earn. That being said, you are competing in an
+open market, and because competition is global and only constraint by market
+forces, the margin is usually thin.</p>
+<p>If your offers are not taken by market participants, your offer might be too
+expensive. Check the <a href="../market/orderbook/">order book</a> and compare your offer to the
+market price. If your offer is competitive and is still ignored, make sure to
+create a <a href="../glossary/">Fidelity Bond</a>, which signals that you are a serious market
+participant and not a malicious entity.</p>
+<p>See also "<a href="https://github.com/JoinMarket-Org/joinmarket-clientserver/blob/master/docs/YIELDGENERATOR.md#a-few-words-about-incentives">a few words about incentives</a>" from the JoinMarket
+documentation.</p>
 <h3 id="how-high-are-the-fees-that-i-do-have-to-pay">How high are the fees that I do have to pay?</h3>
 <p>The amount of <a href="../market/fees/">fees</a> you have to pay depends on market and blockspace
 conditions. They are dictated by supply and demand, both for collaborative
 transactions and onchain tranactions in general.</p>
-<p>Market <a href="/glossary">makers</a> provide liquidity and set the fee they want to earn,
-either in absolute or percentage terms. Market <a href="/glossary">takers</a> have to agree
-to take these offers voluntarily. Check the <a href="market/orderbook">orderbook</a> to get an
+<p>Market <a href="../glossary/">makers</a> provide liquidity and set the fee they want to earn,
+either in absolute or percentage terms. Market <a href="../glossary/">takers</a> have to agree
+to take these offers voluntarily. Check the <a href="../market/orderbook/">orderbook</a> to get an
 up-to-date overview of the current fee market.</p>
 <p>In addition to these fees, you will have to pay mining fees. Mining fees depend
-on how many transactions are currently in the <a href="/glossary">mempool</a>. Inspect your
+on how many transactions are currently in the <a href="../glossary/">mempool</a>. Inspect your
 mempool or use a public site like <a href="https://mempool.space/">mempool.space</a> to do a fee estimation.</p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
