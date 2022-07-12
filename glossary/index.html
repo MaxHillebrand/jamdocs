@@ -319,8 +319,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#collaborative-transactions" class="md-nav__link">
-    Collaborative Transactions
+  <a href="#collaborative-transaction" class="md-nav__link">
+    Collaborative Transaction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cioh" class="md-nav__link">
+    CIOH
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-input-ownership-heuristic" class="md-nav__link">
+    Common Input Ownership Heuristic
   </a>
   
 </li>
@@ -535,6 +549,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#timechain" class="md-nav__link">
+    Timechain
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#timelock" class="md-nav__link">
     Timelock
   </a>
@@ -555,8 +576,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#unspent-transaction-output-utxo" class="md-nav__link">
-    Unspent Transaction Output (UTXO)
+  <a href="#unspent-transaction-output" class="md-nav__link">
+    Unspent Transaction Output
   </a>
   
 </li>
@@ -1038,8 +1059,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#collaborative-transactions" class="md-nav__link">
-    Collaborative Transactions
+  <a href="#collaborative-transaction" class="md-nav__link">
+    Collaborative Transaction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cioh" class="md-nav__link">
+    CIOH
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-input-ownership-heuristic" class="md-nav__link">
+    Common Input Ownership Heuristic
   </a>
   
 </li>
@@ -1254,6 +1289,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#timechain" class="md-nav__link">
+    Timechain
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#timelock" class="md-nav__link">
     Timelock
   </a>
@@ -1274,8 +1316,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#unspent-transaction-output-utxo" class="md-nav__link">
-    Unspent Transaction Output (UTXO)
+  <a href="#unspent-transaction-output" class="md-nav__link">
+    Unspent Transaction Output
   </a>
   
 </li>
@@ -1344,10 +1386,23 @@ Z
 <hr />
 <h2 id="c">C</h2>
 <h3 id="chain-analysis">Chain Analysis</h3>
+<p>Chain analysis is is the practice of applying heuristics to a
+<a href="#timechain">timechain</a>'s public transaction graph. The goal of chain analysis
+is to link the pseudonymous identities created by bitcoin software with "real"
+identities corresponding to natural persons or entities.</p>
+<p>Chain analysis is based on flawed assumptions, because ownership in bitcoin is
+defined by secret knowledge, not possession. Identities can only be linked
+probabilistically, not provably. One of the main assumptions used by chain
+analysis companies is the <a href="#common-input-ownership-heuristic">common input ownership
+heuristic</a>. Collaborative transactions break
+this heuristic.</p>
 <h3 id="coinjoin">CoinJoin</h3>
-<h3 id="collaborative-transactions">Collaborative Transactions</h3>
+<h3 id="collaborative-transaction">Collaborative Transaction</h3>
 <p>A collaborative transaction is a bitcoin transaction that --- you guessed it ---
 is done collaboratively by multiple participants.</p>
+<h3 id="cioh">CIOH</h3>
+<p>Short for <a href="#common-input-ownership-heuristic">Common Input Ownership Heuristic</a>.</p>
+<h3 id="common-input-ownership-heuristic">Common Input Ownership Heuristic</h3>
 <h2 id="d">D</h2>
 <h3 id="doxxic-change">Doxxic Change</h3>
 <h2 id="e">E</h2>
@@ -1389,15 +1444,17 @@ tab</a> and become a market maker.</p>
 <p>You will automatically take offers when running the scheduler via the <a href="../interface/02-jam/">"Jam"
 tab</a>.</p>
 <p><a href="../interface/02-jam/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M13.22 19.03a.75.75 0 0 0 1.06 0l6.25-6.25a.75.75 0 0 0 0-1.06l-6.25-6.25a.75.75 0 1 0-1.06 1.06l4.97 4.97H3.75a.75.75 0 0 0 0 1.5h14.44l-4.97 4.97a.75.75 0 0 0 0 1.06z"/></svg></span> Earn Screen</a></p>
+<h3 id="timechain">Timechain</h3>
 <h3 id="timelock">Timelock</h3>
 <h2 id="u">U</h2>
-<h3 id="unspent-transaction-output-utxo">Unspent Transaction Output (UTXO)</h3>
+<h3 id="unspent-transaction-output">Unspent Transaction Output</h3>
 <h3 id="utxo">UTXO</h3>
+<p>Short for <a href="#unspent-transaction-output">Unspent Transaction Output</a>.</p>
 <div class="footnote">
 <hr />
 <ol>
 <li id="fn:mixdepths">
-<p>What we call "jars" are called "mixdepths" in JoinMarket. They are also referred to as "pockets" in some of the older parts of the JoinMarket documentation.&#160;<a class="footnote-backref" href="#fnref:mixdepths" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p>What we call "jars" are usually called "mixdepths" in JoinMarket. They are also referred to as "pockets" and "accounts" in some of the older parts of the JoinMarket documentation.&#160;<a class="footnote-backref" href="#fnref:mixdepths" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
